@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "random_string_generator.h": "c",
+        "*.tcc": "c",
+        "array": "c",
+        "bitset": "c",
+        "string_view": "c",
+        "format": "c",
+        "initializer_list": "c",
+        "ranges": "c",
+        "span": "c",
+        "stacktrace": "c",
+        "regex": "c",
+        "valarray": "c",
+        "type_traits": "c",
+        "stdio.h": "c",
+        "cmath": "cpp",
+        "thread": "cpp",
+        "xutility": "cpp",
+        "iterator": "cpp"
+    }
+}

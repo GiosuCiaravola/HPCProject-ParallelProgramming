@@ -1,0 +1,87 @@
+\doxysection{C\+:/\+Users/giosu/\+Desktop/divisione approxi cuda/\+Source/\+Edit\+\_\+\+Distance\+\_\+\+Sequential.c File Reference}
+\hypertarget{_edit___distance___sequential_8c}{}\label{_edit___distance___sequential_8c}\index{C:/Users/giosu/Desktop/divisione approxi cuda/Source/Edit\_Distance\_Sequential.c@{C:/Users/giosu/Desktop/divisione approxi cuda/Source/Edit\_Distance\_Sequential.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$sys/time.\+h$>$}\newline
+{\ttfamily \#include "{}Random\+\_\+\+String\+\_\+\+Generator.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_edit___distance___sequential_8c_a64440abdf2067ec163526a2d060197ca}{levenshtein\+Distance}} (const char \texorpdfstring{$\ast$}{*}str1, const char \texorpdfstring{$\ast$}{*}str2)
+\begin{DoxyCompactList}\small\item\em Calculates the Levenshtein distance between two strings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_edit___distance___sequential_8c_a61b33bb1913e6f5f5903f99255cf8675}{print\+Result\+To\+CSV}} (int n\+\_\+characters, int opt, int distance, char \texorpdfstring{$\ast$}{*}directory)
+\begin{DoxyCompactList}\small\item\em Appends the Edit Distance result to a CSV file in a formatted string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_edit___distance___sequential_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Entry point of the program to calculate and print Edit Distance result to CSV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_edit___distance___sequential_8c_a64440abdf2067ec163526a2d060197ca}\label{_edit___distance___sequential_8c_a64440abdf2067ec163526a2d060197ca} 
+\index{Edit\_Distance\_Sequential.c@{Edit\_Distance\_Sequential.c}!levenshteinDistance@{levenshteinDistance}}
+\index{levenshteinDistance@{levenshteinDistance}!Edit\_Distance\_Sequential.c@{Edit\_Distance\_Sequential.c}}
+\doxysubsubsection{\texorpdfstring{levenshteinDistance()}{levenshteinDistance()}}
+{\footnotesize\ttfamily int levenshtein\+Distance (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str1,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{str2 }\end{DoxyParamCaption})}
+
+
+
+Calculates the Levenshtein distance between two strings. 
+
+The Levenshtein distance is the minimum number of single-\/character edits (insertions, deletions, or substitutions) required to change one word into another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str1} & The first input string. \\
+\hline
+{\em str2} & The second input string.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Levenshtein distance between the two input strings. Returns -\/1 if memory allocation fails during distance matrix creation. 
+\end{DoxyReturn}
+\Hypertarget{_edit___distance___sequential_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{_edit___distance___sequential_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{Edit\_Distance\_Sequential.c@{Edit\_Distance\_Sequential.c}!main@{main}}
+\index{main@{main}!Edit\_Distance\_Sequential.c@{Edit\_Distance\_Sequential.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Entry point of the program to calculate and print Edit Distance result to CSV. 
+
+This main function takes command line arguments, generates random strings, calculates the Levenshtein distance, and prints the result to a CSV file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command line arguments. \\
+\hline
+{\em argv} & Array of command line argument strings.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 upon successful execution, 1 insted. 
+\end{DoxyReturn}
+\Hypertarget{_edit___distance___sequential_8c_a61b33bb1913e6f5f5903f99255cf8675}\label{_edit___distance___sequential_8c_a61b33bb1913e6f5f5903f99255cf8675} 
+\index{Edit\_Distance\_Sequential.c@{Edit\_Distance\_Sequential.c}!printResultToCSV@{printResultToCSV}}
+\index{printResultToCSV@{printResultToCSV}!Edit\_Distance\_Sequential.c@{Edit\_Distance\_Sequential.c}}
+\doxysubsubsection{\texorpdfstring{printResultToCSV()}{printResultToCSV()}}
+{\footnotesize\ttfamily void print\+Result\+To\+CSV (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+characters,  }\item[{int}]{opt,  }\item[{int}]{distance,  }\item[{char \texorpdfstring{$\ast$}{*}}]{directory }\end{DoxyParamCaption})}
+
+
+
+Appends the Edit Distance result to a CSV file in a formatted string. 
+
+This function takes the number of characters used in the program, the optimization used, and the result of the Edit Distance as input parameters. It then appends the information to a CSV file in a formatted string in the appropriated directory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+characters} & The number of characters used in the program. \\
+\hline
+{\em opt} & The type of optimization used. \\
+\hline
+{\em distance} & The result of the Edit Distance calculation. \\
+\hline
+{\em directory} & The directory where to put the results. \\
+\hline
+\end{DoxyParams}

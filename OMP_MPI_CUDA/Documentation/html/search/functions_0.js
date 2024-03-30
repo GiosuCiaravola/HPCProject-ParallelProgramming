@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['generaterandomstring_0',['generateRandomString',['../_random___string___generator_8c.html#aadb62de528ea5fa6f4df3c56ee43861a',1,'generateRandomString(int n_characters, int seed):&#160;Random_String_Generator.c'],['../_random___string___generator_8h.html#aadb62de528ea5fa6f4df3c56ee43861a',1,'generateRandomString(int n_characters, int seed):&#160;Random_String_Generator.c']]],
+  ['gettotaltime_1',['getTotalTime',['../_edit___distance___o_m_p___m_p_i_8c.html#aeecfb456bbab7baaf5473559b9a653cf',1,'getTotalTime(struct timeval start, struct timeval stop):&#160;Edit_Distance_OMP_MPI.c'],['../_edit___distance___sequential___approximate_8c.html#aeecfb456bbab7baaf5473559b9a653cf',1,'getTotalTime(struct timeval start, struct timeval stop):&#160;Edit_Distance_Sequential_Approximate.c'],['../_edit___distance___sequential___approximate___cuda_8c.html#aeecfb456bbab7baaf5473559b9a653cf',1,'getTotalTime(struct timeval start, struct timeval stop):&#160;Edit_Distance_Sequential_Approximate_Cuda.c']]]
+];

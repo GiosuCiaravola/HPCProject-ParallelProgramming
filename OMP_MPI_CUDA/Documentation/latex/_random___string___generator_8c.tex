@@ -1,0 +1,33 @@
+\doxysection{C\+:/\+Users/giosu/\+Desktop/divisione approxi cuda/\+Source/\+Random\+\_\+\+String\+\_\+\+Generator.c File Reference}
+\hypertarget{_random___string___generator_8c}{}\label{_random___string___generator_8c}\index{C:/Users/giosu/Desktop/divisione approxi cuda/Source/Random\_String\_Generator.c@{C:/Users/giosu/Desktop/divisione approxi cuda/Source/Random\_String\_Generator.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{_random___string___generator_8c_aadb62de528ea5fa6f4df3c56ee43861a}{generate\+Random\+String}} (int n\+\_\+characters, int seed)
+\begin{DoxyCompactList}\small\item\em Generates a random string of specified length using the given seed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_random___string___generator_8c_aadb62de528ea5fa6f4df3c56ee43861a}\label{_random___string___generator_8c_aadb62de528ea5fa6f4df3c56ee43861a} 
+\index{Random\_String\_Generator.c@{Random\_String\_Generator.c}!generateRandomString@{generateRandomString}}
+\index{generateRandomString@{generateRandomString}!Random\_String\_Generator.c@{Random\_String\_Generator.c}}
+\doxysubsubsection{\texorpdfstring{generateRandomString()}{generateRandomString()}}
+{\footnotesize\ttfamily char \texorpdfstring{$\ast$}{*} generate\+Random\+String (\begin{DoxyParamCaption}\item[{int}]{n\+\_\+characters,  }\item[{int}]{seed }\end{DoxyParamCaption})}
+
+
+
+Generates a random string of specified length using the given seed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+\_\+characters} & The desired length of the generated string. \\
+\hline
+{\em seed} & The seed value for the random number generator.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A dynamically allocated char array (string) containing random characters. It is the responsibility of the caller to free the allocated memory using free() when done using the generated string. Returns NULL in case of memory allocation failure. 
+\end{DoxyReturn}
